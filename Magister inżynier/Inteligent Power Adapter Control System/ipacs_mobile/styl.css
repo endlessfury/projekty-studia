@@ -1,0 +1,927 @@
+:root {
+    --kolor-akcentowanych-napisow: #1b6991;
+    --kolor-placeholdera: #799eb1a1;
+    --tlo-selectow: white;
+    --tlo-przyciskow: white;
+    --kolor-ramki-przyciskow: #d6d6d6;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e3e1e1;
+    font-family: Calibri;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+body::-webkit-scrollbar-track {
+    background:#e3e1e1;
+}
+ 
+body::-webkit-scrollbar-thumb {
+	border-radius:10px;
+	background-image: -webkit-linear-gradient( 270deg, rgb(157,255,255) 0%, rgb(61,147,181) 100%);
+}
+
+#container {
+    width: 370px;
+    margin: auto;
+    min-height: 300px;
+    min-width: 300px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.panel {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    min-height: 20px;
+    overflow: hidden;
+    margin-top:25px;
+    padding: 10px;
+    border: white 2px solid;   
+    border-radius: 5px;
+    /*background-color: rgb(73, 73, 73);*/
+}
+
+.subPanelTop {
+    width: 100%;
+    line-height: 40px;
+    vertical-align: center;
+    text-align: center;
+    font-size: 16px;
+    color:black;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;     
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+}
+
+.subpanel {
+    float:left;
+    width: 346px;
+    margin : 10px 0px 0px 0px;
+    background-color: #f5f5f5;
+    color: black;
+    font-size: 18px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;     
+    border-radius: 5px;
+}
+
+.subpanelOutdoor {
+    float:left;
+    width: 323px;
+    margin : 10px 10px 0px 0px;
+    background-color: #f5f5f5;
+    color: black;
+    font-size: 18px;
+	box-shadow: 6px 6px 32px -10px black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;     border-radius: 5px;
+}
+
+.subpanel:nth-child(2) {
+    float:left;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.subpanel:nth-child(3) {
+    float: left;
+    text-align: center;
+}
+
+.subPanelButtons {
+    width: 326px;
+    margin: 5px 10px 5px 10px;
+}
+
+.subPanelButtons:nth-child(1) {
+    margin-top: 10px;
+}
+
+.subPanelDetails {
+    width: 100%;
+    margin : 10px 0px 0px 0px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;     border-radius: 5px;
+    color: black;
+    font-size: 18px;
+    overflow: auto;
+    padding: 15px;
+}
+
+.subPanelDetails::-webkit-scrollbar { 
+    display: none; 
+}
+
+.subPanelConfig {
+    width: 100%;
+    min-height: 300px;
+    margin : 10px 0px 0px 0px;
+    background-color: #f5f5f5;
+    color: black;
+    font-size: 18px;
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;     
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.subPanelConfigAdapter {
+    width: 100%;
+    min-height: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;     
+    border-radius: 5px;
+    border: rgb(100, 100, 100) 1px solid;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.subpanelConfig_2 {
+    float:left;
+    width: 100%;
+    margin : 10px 0px 0px 0px;
+    background-color: #f5f5f5;
+    color: black;
+    font-size: 18px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;     
+    border-radius: 5px;
+    padding: 10px 40px 40px 40px;
+}
+
+/* logi */
+
+table.logs {
+    width: 100%;
+    border: 0px;
+    border-collapse: collapse;
+    color: black;
+}
+
+tr.logs:nth-child(even){
+    background-color: #ebebeb;
+}
+
+tr.logs{
+    background-color: #f5f5f5;
+}
+
+th.logs, td.logs {
+    vertical-align: center;
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+    border-bottom: 1px solid #687482;
+}
+
+/* PRZYCISKI */
+
+a.panelButtonGreen, a.panelButtonGreen:link, a.panelButtonGreen:visited, a.panelButtonGreen:focus, a.panelButtonGreen:active{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient( -45deg, #1a6613 0%, #119907 100%);
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    line-height: 50px; 
+    text-decoration: none;
+}
+
+a.panelButtonGreen:hover {
+	box-shadow: 0px 1px 10px 0px #2edd1e;
+}
+
+a.panelButtonRed, a.panelButtonRed:link, a.panelButtonRed:visited, a.panelButtonRed:focus, a.panelButtonRed:active{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient( -45deg, #833232 0%, #bb3535 100%);
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    line-height: 50px; 
+    text-decoration: none;
+}
+
+a.panelButtonRed:hover {
+	box-shadow: 0px 1px 10px 0px #f70052;
+}
+
+input[type=submit].panelButton {
+    margin: 6.6px 0;
+    color:black;
+    text-decoration:none; 
+    background-color: rgba(92, 92, 92, 0);
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #687482;
+    width: 300px;
+    height: 85px;
+    font-size: 21px;
+    border-radius: 14px;
+}
+
+input[type=submit]:hover.panelButton {
+    color:#0f729c;
+}
+
+input[type=submit].panelButton:nth-child(1) {
+    margin: 0px 0 6.6px;
+    color:black;
+    text-decoration:none; 
+    background-color: rgba(92, 92, 92, 0);
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #687482;
+    width: 300px;
+    height: 85px;
+    font-size: 21px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover.panelButton:nth-child(1) {
+    color:#0f729c;
+}
+
+a.showMore, a.showMore:link, a.showMore:visited, a.showMore:focus, a.showMore:active{
+    color:black;
+    text-decoration:none; 
+    background-color: #e3e1e1;
+    padding: 6px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+}
+    
+a.showMore:hover {
+	box-shadow: 0px 3px 30px 0px #1d9bb9;
+}
+
+a.taskManager, a.taskManager:link, a.taskManager:visited, a.taskManager:focus, a.taskManager:active{
+    color:black;
+    text-decoration:none; 
+    background-color: #e3e1e1;
+    padding: 6px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 180px;
+}
+    
+a.taskManager:hover {
+	box-shadow: 0px 3px 30px 0px red;
+}
+
+a.menu, a.menu:link, a.menu:visited, a.menu:focus, a.menu:active{
+    color:black;
+    text-decoration:none; 
+    background-color: rgba(92, 92, 92, 0);
+    padding: 6px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient( 0deg, #2edd1e 0%, #149c0f 100%);
+	box-shadow: 0px 3px 30px 0px #2edd1e;
+}
+
+a.menu:hover {
+    color: black;
+}
+
+a.goBack, a.goBack:link, a.goBack:visited, a.goBack:focus, a.goBack:active{
+    color:black;
+    text-decoration:none; 
+    /*background-image: -webkit-linear-gradient( 0deg, #149c0f 0%, #196017 100%);*/
+    background-color: #e3e1e1;
+    padding: 6px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0px;
+}
+    
+a.goBack:hover {
+    
+	box-shadow: 0px 2px 20px 0px black;
+    /*background-image: -webkit-linear-gradient( 90deg, #149c0f 0%, #196017 100%);*/
+    
+}
+
+a.configLink, a.configLink:link, a.configLink:visited, a.configLink:focus, a.configLink:active{
+    color:var(--kolor-akcentowanych-napisow);
+    text-decoration:none; 
+    margin-left: 5px;
+    transition: color 0.5s, font-size 0.5s;
+}
+    
+a.configLink:hover {
+    color: black;
+    font-size: 17px;
+}
+
+a.configLinkChangeName, a.configLinkChangeName:link, a.configLinkChangeName:visited, a.configLinkChangeName:focus, a.configLinkChangeName:active{
+    color:var(--kolor-akcentowanych-napisow);
+    text-decoration:none; 
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.5s, font-size 0.5s;
+}
+    
+a.configLinkChangeName:hover {
+    color: black;
+    font-size: 17px;
+}
+
+a.configLinkChangeNameSockets, a.configLinkChangeNameSockets:link, a.configLinkChangeNameSockets:visited, a.configLinkChangeNameSockets:focus, a.configLinkChangeNameSockets:active{
+    color:var(--kolor-akcentowanych-napisow);
+    text-decoration:none; 
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.5s, font-size 0.5s;
+}
+    
+a.configLinkChangeNameSockets:hover {
+    color: black;
+    font-size: 17px;
+}
+
+a.configLinkRemove, a.configLinkRemove:link, a.configLinkRemove:visited, a.configLinkRemove:focus, a.configLinkRemove:active{
+    color:var(--kolor-akcentowanych-napisow);
+    text-decoration:none; 
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.5s, font-size 0.5s;
+}
+    
+a.configLinkRemove:hover {
+    color: black;
+    font-size: 17px;
+}
+  
+a.configLinkAdd, a.configLinkAdd:link, a.configLinkAdd:visited, a.configLinkAdd:focus, a.configLinkAdd:active{
+    color:var(--kolor-akcentowanych-napisow);
+    text-decoration:none; 
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.5s, font-size 0.5s;
+}
+    
+a.configLinkAdd:hover {
+    color: black;
+    font-size: 17px;
+}
+
+a.configPower, a.configPower:link, a.configPower:visited, a.configPower:focus, a.configPower:active{
+    color:var(--kolor-akcentowanych-napisow);
+    text-decoration:none; 
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.5s, font-size 0.5s;
+}
+    
+a.configPower:hover {
+    color: black;
+    font-size: 17px;
+}
+
+a.configWaitNumber, a.configWaitNumber:link, a.configWaitNumber:visited, a.configWaitNumber:focus, a.configWaitNumber:active{
+    color:var(--kolor-akcentowanych-napisow);
+    text-decoration:none; 
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.5s, font-size 0.5s;
+}
+    
+a.configWaitNumber:hover {
+    color: black;
+    font-size: 17px;
+}
+
+a.configWeakSignalIndicator, a.configWeakSignalIndicator:link, a.configWeakSignalIndicator:visited, a.configWeakSignalIndicator:focus, a.configWeakSignalIndicator:active{
+    color:var(--kolor-akcentowanych-napisow);
+    text-decoration:none; 
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.5s, font-size 0.5s;
+}
+    
+a.configWeakSignalIndicator:hover {
+    color: black;
+    font-size: 17px;
+}
+
+a.taskLink, a.taskLink:link, a.taskLink:visited, a.taskLink:focus, a.taskLink:active{
+    color:var(--kolor-akcentowanych-napisow);
+    text-decoration:none; 
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+    
+a.taskLink:hover {
+    color: black;
+}
+
+button.panelButton {
+    border:0px;
+    color:black;
+    text-decoration:none; 
+    padding: 6px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #e3e1e1;
+    color: black;
+}
+
+button:hover.panelButton {
+	box-shadow: 0px 3px 20px 0px black;
+}
+
+/* scrollbar */
+
+.subPanelDetails {
+    min-height: 100px;
+    overflow: auto;
+} 
+
+
+.subPanelDetails::-webkit-scrollbar {
+    width: 10px !important;
+    visibility: hidden;
+}
+.subPanelDetails::-webkit-scrollbar-track {
+    background: white;
+    visibility: hidden;
+}
+.subPanelDetails::-webkit-scrollbar-thumb {
+    background: rgb(53, 53, 53);
+    visibility:hidden;
+}
+.subPanelDetails:hover::-webkit-scrollbar-thumb {
+    visibility:visible;
+}
+
+/* konfiguracja */
+
+table.configMain{
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th.configMain {
+    border-bottom: 1px solid #687482;
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #687482;
+}
+
+td.configMain {
+    border-bottom: 1px solid #687482;
+    padding: 20px;
+}
+
+td.configMain:nth-child(1), td.configMain:nth-child(2) {
+    border-right: 1px solid #687482;
+}
+
+
+table.configSub{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr.configSub {
+    border-top: 1.5px dashed #687482;
+}
+
+tr.configSub:nth-child(1) {
+    border-top: 0px;
+}
+td.configSub {
+    padding: 10px;
+}
+
+select {
+    padding: 10px 12px;
+    border: 0;
+    border-bottom: 1px solid var(--kolor-akcentowanych-napisow);
+    border-radius: 5px;
+    background-color: var(--tlo-selectow);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.2s ease-in;
+}
+select:focus {
+    outline: none;
+}
+select, option {
+    font-size: 18px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select.tasks {
+    background-color: #f1f1f1;
+}
+
+select.permissions {
+    padding: 10px 12px;
+    border: 0;     border-bottom: 1px solid var(--kolor-akcentowanych-napisow);
+    color: var(--kolor-akcentowanych-napisow);
+    border-radius: 5px;
+    background-color: var(--tlo-selectow);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 15px;
+}
+select:focus.permissions {
+    outline: none;
+}
+select.permissions, option.permissions {
+    /*font-size: 15px;*/
+}
+
+select.changePower {
+    padding: 5px 7px;
+    border: 0;     border-bottom: 1px solid var(--kolor-akcentowanych-napisow);
+    color: black;
+    border-radius: 5px;
+    background-color: var(--tlo-selectow);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 15px;
+}
+select:focus.changePower {
+    outline: none;
+}
+select.changePower, option.changePower {
+    font-size: 15px;
+    color: var(--kolor-akcentowanych-napisow);
+}
+
+input[type=text].changeName {
+    background-color:var(--tlo-selectow);
+    color:var(--kolor-akcentowanych-napisow);
+    border: 0;
+    border-bottom: 1px solid var(--kolor-akcentowanych-napisow);
+    padding:3px 5px 3px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 22px;
+}
+
+input[type=password].changeName {
+    background-color:var(--tlo-selectow);
+    color:var(--kolor-akcentowanych-napisow);
+    border: 0;
+    border-bottom: 1px solid var(--kolor-akcentowanych-napisow);
+    padding:3px 5px 3px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 22px;
+}
+
+input[type=text].logIn {
+    background-color:var(--tlo-selectow);
+    color:var(--kolor-akcentowanych-napisow);
+    border: 0;
+    border-bottom: 1px solid var(--kolor-akcentowanych-napisow);
+    padding:3px 5px 3px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+    margin: 5px 0 5px 0;
+}
+
+input[type=text].logIn::placeholder {
+    color: var(--kolor-placeholdera);
+}
+
+input[type=password].logIn {
+    background-color:var(--tlo-selectow);
+    color:var(--kolor-akcentowanych-napisow);
+    border: 0;
+    border-bottom: 1px solid var(--kolor-akcentowanych-napisow);
+    padding:3px 5px 3px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+    margin: 5px 0 5px 0;
+}
+
+input[type=text]:focus.changeName {
+    outline: none;
+}
+input[type=text].changeName::placeholder {
+    color: var(--kolor-placeholdera);
+}
+.logIn::placeholder {
+    color: var(--kolor-placeholdera);
+}
+
+input[type=submit].changeName {
+    background-color:var(--tlo-selectow);
+    color:black;
+    border: 0;
+    border-bottom: 1px solid var(--kolor-akcentowanych-napisow);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    transition: box-shadow 0.3s;
+}
+input[type=submit]:focus.changeName {
+    outline: none;
+}
+
+input[type=submit]:hover.changeName {
+	box-shadow: 0px 2px 10px 0px var(--kolor-akcentowanych-napisow);
+    cursor: pointer;
+}
+
+input[type=text].taskCondition {
+    padding: 10px 12px;
+    border: 1px solid #6992a754;
+    border-bottom: 1px solid var(--kolor-akcentowanych-napisow);
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.changeNameInputs.active {
+    visibility:visible;
+    height: 100%;
+    margin: 0px 0 10px 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+.changeNameInputs {
+    visibility:hidden;
+    height:0px;
+    opacity: 0;
+}
+
+.changeNameInputsSockets.active {
+    visibility:visible;
+    height: 100%;
+    margin: 0px 0 10px 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+.changeNameInputsSockets {
+    visibility:hidden;
+    height:0px;
+    opacity: 0;
+}
+
+.RemoveConfirm.active {
+    visibility:visible;
+    height: 100%;
+    margin: 5px 0 10px 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+.RemoveConfirm {
+    visibility:hidden;
+    height:0px;
+    color: black;
+    padding-left: 22px;
+    opacity: 0;
+}
+
+.configAdd.active {
+    visibility:visible;
+    height: 100%;
+    margin: 5px 0 10px 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+.configAdd {
+    visibility:hidden;
+    height:0px;
+    color: var(--kolor-akcentowanych-napisow);
+    padding-left: 22px;
+    opacity: 0;
+}
+
+.configPowerForm.active {
+    visibility:visible;
+    height: 100%;
+    margin: 10px 0 10px 22px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+.configPowerForm {
+    visibility:hidden;
+    height:0px;
+    opacity: 0;
+}
+
+.configWaitNumberForm.active {
+    visibility:visible;
+    height: 100%;
+    margin: 10px 0 10px 22px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+.configWaitNumberForm {
+    visibility:hidden;
+    height:0px;
+    opacity: 0;
+}
+
+.configWeakSignalIndicatorForm.active {
+    visibility:visible;
+    height: 100%;
+    margin: 10px 0 10px 22px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+.configWeakSignalIndicatorForm {
+    visibility:hidden;
+    height:0px;
+    opacity: 0;
+}
+
+a.logOut:hover p.new-label span{
+  display: none;
+}
+a.logOut:hover p.new-label:after{
+  content: 'WYLOGUJ';
+}
+
+a.logOut, a.logOut:link, a.logOut:visited, a.logOut:focus, a.logOut:active{
+    color:#111111;
+    text-decoration:none; 
+    background-color: #e3e1e1;
+    padding: 6px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0px;
+    min-width:180px;
+}
+    
+a.logOut:hover {
+	box-shadow: 0px 2px 20px 0px black;
+}
+a.logOut p.new-label {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+#loginDiv
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: none;
+    color: black;
+    font-size: 18px;  
+    width: 244px;
+}
+
+#loginDivInner
+{
+    background-color: #f5f5f5;    
+    padding: 30px;
+    border-radius: 5px;
+    width: 160px;
+}
+
+.connectionInfo {
+    line-height:30px;
+    padding:0;
+    color: red;
+    font-size:13px;
+}
+
+.connectionInfo_off {
+    line-height:30px;
+    padding:0;
+    color: #ff8c00;
+    font-size:13px;
+    padding-bottom: 10px;
+}
+
+a.newAccount, a.newAccount:link, a.newAccount:visited, a.newAccount:focus, a.newAccount:active, a.newAccount:hover{
+    background-color:transparent;
+    color:black;
+    border:#13587a solid 1px;
+    padding:3px 5px 3px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+    
+a.newAccount:hover {
+	cursor: context-menu;
+}
+
+.task_active {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.task_inactive {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.tasksDiv {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    background-color: #e3e1e1;
+    padding: 10px;
+    margin-bottom: 10px;
+    min-width: 50px;
+    width: 94%;
+}
+
+.subPanelDetailsTasks  {
+    width: 100%;
+    margin : 10px 0px 0px 0px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;     border-radius: 5px;
+    color: #b3bbbf;
+    font-size: 18px;
+    overflow: auto;
+    padding: 15px;
+}
+
+.subPanelDetailsTasks::-webkit-scrollbar { 
+    display: none; 
+}
+
+.hintText {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 15px 0 15px;
+    color: rgb(161, 161, 161);
+}
+
+a.infoLink, a.infoLink:link, a.infoLink:visited, a.infoLink:focus, a.infoLink:active{
+    color:black;
+    text-decoration:none; 
+}
+    
+a.infoLink:hover {
+    color: darkorange;
+}
